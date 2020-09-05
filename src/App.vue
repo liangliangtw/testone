@@ -10,7 +10,8 @@
       <router-link to="/router">router</router-link>|
       <router-link to="/buju">布局</router-link>|
       <router-link to="/about">About</router-link>|
-      <router-link to="/multiplechoice">多选</router-link>
+      <router-link to="/multiplechoice">多选</router-link>|
+      <router-link to="/git">git操作</router-link>
     </div>
     <router-view />
   </div>

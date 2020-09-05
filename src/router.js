@@ -52,6 +52,11 @@ export default new Router({
       path: "/multiplechoice",
       name: "Multiplechoice",
       component: () => import("@/views/Multiplechoice")
+    },
+    {
+      path: "/git",
+      name: "Git",
+      component: () => import("@/views/git")
     }
   ]
 });
