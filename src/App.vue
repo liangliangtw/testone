@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/home">Home</router-link> |
-      <router-link to="/mixin">Mixin</router-link> |
-      <router-link to="/review">Review</router-link> |
-      <router-link to="/chuanzhi">Chuanzhi</router-link> |
-      <router-link to="/crossDomain">跨域</router-link> |
-      <router-link to="/">vuex</router-link> |
-      <router-link to="/router">router</router-link> |
-      <!-- <router-link to="/about">About</router-link> -->
+      <router-link to="/home">Home</router-link>|
+      <router-link to="/mixin">Mixin</router-link>|
+      <router-link to="/review">Review</router-link>|
+      <router-link to="/chuanzhi">Chuanzhi</router-link>|
+      <router-link to="/crossDomain">跨域</router-link>|
+      <router-link to="/">vuex</router-link>|
+      <router-link to="/router">router</router-link>|
+      <router-link to="/buju">布局</router-link>|
+      <router-link to="/about">About</router-link>|
+      <router-link to="/multiplechoice">多选</router-link>
     </div>
     <router-view />
   </div>

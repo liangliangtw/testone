@@ -10,8 +10,8 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "Vuextest",
-      component: () => import("@/views/Vuextest")
+      name: "home",
+      component: () => import("@/views/Home.vue")
     },
     {
       path: "/review",
@@ -42,6 +42,16 @@ export default new Router({
       path: "/router",
       name: "Router",
       component: () => import("@/views/Router")
+    },
+    {
+      path: "/buju",
+      name: "Buju",
+      component: () => import("@/views/buju")
+    },
+    {
+      path: "/multiplechoice",
+      name: "Multiplechoice",
+      component: () => import("@/views/Multiplechoice")
     }
   ]
 });

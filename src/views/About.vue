@@ -4,15 +4,9 @@
       alt="Vue logo"
       src="../assets/logo.png"
     >
-    <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+    <HelloWorld msg="Welcome to Your Vue.js App" />-->
     <div class="test">
-      <img
-        :src="urlss"
-        alt=""
-        style="wigth:200px"
-        class="img"
-        @click="big($event)"
-      />
+      <img :src="urlss" alt style="wigth:200px" class="img" @click="big($event)" />
     </div>
   </div>
 </template>
@@ -27,7 +21,7 @@ export default {
       agagintable: [],
       srcList: [
         "https://fuss10.elemecdn.com/8/27/f01c15bb73e1ef3793e64e6b7bbccjpeg.jpeg",
-        "https://fuss10.elemecdn.com/1/8e/aeffeb4de74e2fde4bd74fc7b4486jpeg.jpeg"
+        "https://fuss10.elemecdn.com/1/8e/aeffeb4de74e2fde4bd74fc7b4486jpeg.jpeg",
         // {
         //   path:
         //     "https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg"
@@ -37,7 +31,7 @@ export default {
         //     "https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg"
         // }
       ],
-      urlss: require("@/assets/logo.png")
+      urlss: require("@/assets/logo.png"),
     };
   },
   components: {},
@@ -48,12 +42,12 @@ export default {
 
       this.$previewImage(
         {
-          urls: this.srcList
+          urls: this.srcList,
         },
         e
       );
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>
