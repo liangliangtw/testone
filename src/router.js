@@ -58,5 +58,11 @@ export default new Router({
       name: "Git",
       component: () => import("@/views/git")
     }
+    ,
+    {
+      path: "/eventBus",
+      name: "EventBus",
+      component: () => import("@/views/EventBus")
+    }
   ]
 });

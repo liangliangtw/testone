@@ -1,9 +1,7 @@
 <template>
   <div class="app-container">
     <button @click="zichuan">子组件点击可以传值</button>
-    <div>
-      父组件调用子组件方法：{{num}}
-    </div>
+    <div>父组件调用子组件方法：{{num}}</div>
   </div>
 </template>
 
@@ -15,7 +13,7 @@ export default {
     return {
       zitext: "子组件传值过来啦",
       value: "88",
-      num: 0
+      num: 0,
     };
   },
   mounted() {
@@ -29,9 +27,9 @@ export default {
     },
     addnum() {
       this.num++;
-    }
+    },
   },
-  components: {}
+  components: {},
 };
 </script>
 

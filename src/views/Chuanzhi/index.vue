@@ -1,11 +1,7 @@
 <template>
   <div class="app-container">
     <div>父组件收子组件传值:{{ text }}</div>
-    <child-page
-      @fu="shouzichuanzhi($event)"
-      ref="child"
-      @hook:mounted="doSomething"
-    ></child-page>
+    <child-page @fu="shouzichuanzhi($event)" ref="child" @hook:mounted="doSomething"></child-page>
     <div>evenbus传值:{{ valuee }}</div>
     <Button @click="diaoychild">调用子组件方法</Button>
   </div>
@@ -18,7 +14,7 @@ export default {
   data() {
     return {
       text: "",
-      valuee: ""
+      valuee: "",
     };
   },
   mounted() {
@@ -32,7 +28,7 @@ export default {
     },
     bus() {
       let that = this;
-      eventBus.$on("key", function(value) {
+      eventBus.$on("key", function (value) {
         // console.log(value, "key");
         that.valuee = value;
       });
@@ -42,9 +38,9 @@ export default {
     },
     doSomething() {
       console.log("监听到子组件mounted时");
-    }
+    },
   },
-  components: { ChildPage }
+  components: { ChildPage },
 };
 </script>
 
