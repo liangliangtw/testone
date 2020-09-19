@@ -16,7 +16,7 @@
     <br />revert: 回滚到上一个版本
     <br />git push origin 分支名
     <br />git push origin --delete dev 删除远程分支
-    <br />git reset --hard a8c42 回退版本 后面数组为 git log版本库的状态前几位o
+    <br />git reset --hard a8c42 回退版本 后面数组为 git log版本库的状态前几位o8
     <br />
   </div>
 </template>
